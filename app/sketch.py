@@ -20,6 +20,7 @@ from spot import MAX_STRAIGHT_REMOVALS
 from discover import whichProcessingFlavor, PJS, P5JS
 from color import randomColor
 
+from typing import Callable
 from types import MethodType
 from pyodide import create_proxy
 
@@ -29,6 +30,7 @@ from js import document
 _SCREENSHOT, _EXT = 'screen-', '.png'
 
 p5 = object
+p5Sketch = Callable[ [ p5 ], None ]
 
 def sketch(p: p5):
     p.flavor = whichProcessingFlavor(p)

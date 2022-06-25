@@ -1,16 +1,13 @@
-from sketch import sketch, p5
+from sketch import sketch, p5, p5Sketch
 
 from attribute import splitScriptData
 from size import canvasSize, canvasMappedToDimensions
 from discover import PJS, Q5JS, P5JS, FLAVORS
 
 from random import choice
-from typing import Callable
 
 import js
 from js import document
-
-p5Sketch = Callable[ [ p5 ], None ]
 
 def instantiateFlavor(flavor: str, app: p5Sketch) -> p5:
     if flavor == PJS: return pjs(app)
