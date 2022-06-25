@@ -5,7 +5,7 @@
  #
  # https://TheCodingTrain.com/CodingChallenges/162-self-avoiding-walk.html
  #
- # PyScript conversion by GoToLoop (2022/Jun/24) (v1.1.0)
+ # PyScript conversion by GoToLoop (2022/Jun/24) (v1.1.1)
  #
  # https://Discourse.Processing.org/t/
  # converting-coding-challenge-self-avoiding-walk-backtracing-
@@ -17,7 +17,7 @@
 from grid import Grid, REMOVED, PAUSED, FINISHED, BG
 from spot import MAX_STRAIGHT_REMOVALS
 
-from discover import whichProcessingFlavor, PJS, P5JS
+from discover import discoverProcessingFlavor, PJS, P5JS
 from color import randomColor
 
 from typing import Callable
@@ -33,7 +33,7 @@ p5 = object
 p5Sketch = Callable[ [ p5 ], None ]
 
 def sketch(p: p5):
-    p.flavor = whichProcessingFlavor(p)
+    p.flavor = discoverProcessingFlavor(p)
 
     p.grid = None
     p.removals = 0
