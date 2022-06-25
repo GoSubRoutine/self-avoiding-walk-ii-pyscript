@@ -1,0 +1,10 @@
+{
+  "python.analysis.extraPaths": [
+      "./app",
+      "./modules",
+      "./utils"
+  ],
+  "python.analysis.diagnosticSeverityOverrides": {
+      "reportMissingImports": "none"
+  }
+}
