@@ -59,7 +59,6 @@ class Spot:
 
         if not len(dirs): return
 
-        step = choice(dirs)
-        step.tried = True
+        (step := choice(dirs)).tried = True
 
         return spot2d[sr + step.y][sc + step.x]

@@ -68,16 +68,12 @@ class Grid:
 
     def removeTailSpotIfTooOld(g):
         g.states[REMOVED] = g.p.frameCount - g.spot.age >= AGE_THRESHOLD
-
-        g.states[REMOVED] and\
-            g.removeTailSpot().adjustAllSpotsAges()
-
+        g.states[REMOVED] and g.removeTailSpot().adjustAllSpotsAges()
         return g
 
 
     def removeTailSpot(g):
-        length = len(g.path)
-        g.states[REMOVED] = length >= 2
+        g.states[REMOVED] = (length := len(g.path)) >= 2
 
         if g.states[REMOVED]:
             g.path.pop().clear()
@@ -89,10 +85,9 @@ class Grid:
 
 
     def adjustAllSpotsAges(g):
-        length = len(g.path) - 1
         p5map = g.p.map
 
-        if length:
+        if length := len(g.path) - 1:
             for i, spot in enumerate(g.path):
                 spot.age += round(p5map(i, 0, length, 1, AGE_INCREASE))
 

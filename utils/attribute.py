@@ -20,8 +20,7 @@ def splitScriptData(attr = _ATTRIBUTE) -> tuple[str, ...]:
 def getScriptData(attr: str, data: str = ''):
     def matchAttr(script: object, *_):
         nonlocal data
-        data = getattr(script.dataset, attr, data)
-        return data
+        return (data := getattr(script.dataset, attr, data))
 
     scripts: Sequence[object] = arrayFrom(document.querySelectorAll(_PY_TAG))
     scripts.push(*document.scripts)
