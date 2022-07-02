@@ -1,7 +1,7 @@
 # https://developer.Mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
 
 # https://developer.Mozilla.org/en-US/docs/Web/JavaScript/Reference
-# /Global_Objects/Array/find
+# /Global_Objects/Array/some
 
 from typing import Sequence
 from re import compile
@@ -24,6 +24,6 @@ def getScriptData(attr: str, data: str = ''):
 
     scripts: Sequence[object] = arrayFrom(document.querySelectorAll(_PY_TAG))
     scripts.push(*document.scripts)
-    scripts.find(matchAttr)
+    scripts.some(matchAttr)
 
     return data
