@@ -5,7 +5,7 @@
  #
  # https://TheCodingTrain.com/CodingChallenges/162-self-avoiding-walk.html
  #
- # PyScript conversion by GoToLoop (2022/Jun/24) (v1.1.5)
+ # PyScript conversion by GoToLoop (2022/Jun/24) (v1.1.6)
  #
  # https://Discourse.Processing.org/t/
  # converting-coding-challenge-self-avoiding-walk-backtracing-

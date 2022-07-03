@@ -17,13 +17,13 @@ def splitScriptData(attr = _ATTRIBUTE) -> tuple[str, ...]:
     return tuple( _DELIMITERS.split(getScriptData(attr).strip().lower()) )
 
 
-def getScriptData(attr: str, data: str = ''):
+def getScriptData(attr = _ATTRIBUTE, _data: str = ''):
     def matchAttr(script: object, *_):
-        nonlocal data
-        return (data := getattr(script.dataset, attr, data))
+        nonlocal _data
+        return (_data := getattr(script.dataset, attr, _data))
 
     scripts: Sequence[object] = arrayFrom(document.querySelectorAll(_PY_TAG))
     scripts.push(*document.scripts)
     scripts.some(matchAttr)
 
-    return data
+    return _data
