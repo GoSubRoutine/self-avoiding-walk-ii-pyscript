@@ -1,9 +1,10 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
 
-if TYPE_CHECKING: from grid import Grid
+if TYPE_CHECKING: from modules.grid import Grid
 
-from step import Step
+from modules.step import Step
+
 from random import choice
 
 AGE_THRESHOLD = 200

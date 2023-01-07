@@ -1,6 +1,6 @@
-from color import colorFrom32bitTo8Bits
+from utils.color import colorFrom32bitTo8Bits
 
-from spot import (
+from modules.spot import (
     Spot,
     SPACING, HALF_SPACE, QUARTER_SPACE,
     PATH_STROKE, TRAIL_STROKE,

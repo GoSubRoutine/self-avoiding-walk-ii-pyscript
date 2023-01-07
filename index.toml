@@ -1,0 +1,22 @@
+name = 'Self Avoiding Walk II'
+description = 'https://Glitch.com/~self-avoiding-walk-ii-pyscript'
+version = 'v1.1.7'
+author_name = 'GoToLoop'
+license = 'Unlicense'
+
+[[fetch]]
+
+from = '/'
+
+files = [
+  'app/sketch.py',
+
+  'modules/grid.py',
+  'modules/spot.py',
+  'modules/step.py',
+
+  'utils/attribute.py',
+  'utils/color.py',
+  'utils/discover.py',
+  'utils/size.py'
+]

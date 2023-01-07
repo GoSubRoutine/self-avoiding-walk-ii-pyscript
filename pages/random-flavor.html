@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <meta charset=utf-8>
 
 <link rel=stylesheet href=https://PyScript.net/latest/pyscript.css />
@@ -7,20 +9,8 @@
 <script defer src=https://cdn.JsDelivr.net/npm/q5xjs></script>
 <script defer src=https://cdn.JsDelivr.net/npm/p5></script>
 
-<py-env>
-  - paths:
-    - ../app/sketch.py
-
-    - ../modules/grid.py
-    - ../modules/spot.py
-    - ../modules/step.py
-
-    - ../utils/attribute.py
-    - ../utils/color.py
-    - ../utils/discover.py
-    - ../utils/size.py
-</py-env>
+<py-config src=../index.toml></py-config>
 
 <py-script defer src=../index.py></py-script>
 
-<h3>Self Avoiding Walk II (<i id=flavor></i>/PS ESM Instance Mode):</h3>
+<h3>Self Avoiding Walk II (<i id=flavor>flavor</i>/PS ESM Instance Mode):</h3>

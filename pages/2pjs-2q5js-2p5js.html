@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <meta charset=utf-8>
 
 <!-- <link rel=stylesheet href=https://PyScript.net/latest/pyscript.css /> -->
@@ -7,18 +9,6 @@
 <script defer src=https://cdn.JsDelivr.net/npm/q5xjs></script>
 <script defer src=https://cdn.JsDelivr.net/npm/p5></script>
 
-<py-env>
-  - paths:
-    - ../app/sketch.py
-
-    - ../modules/grid.py
-    - ../modules/spot.py
-    - ../modules/step.py
-
-    - ../utils/attribute.py
-    - ../utils/color.py
-    - ../utils/discover.py
-    - ../utils/size.py
-</py-env>
+<py-config src=../index.toml></py-config>
 
 <py-script src=../index.py data-flavors=pjs,pjs;q5js,q5js;p5js,p5js></py-script>
