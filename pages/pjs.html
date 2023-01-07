@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <meta charset=utf-8>
 
 <link rel=stylesheet href=https://PyScript.net/latest/pyscript.css />
@@ -5,19 +7,7 @@
 
 <script defer src=https://Unpkg.com/processing-js></script>
 
-<py-env>
-  - paths:
-    - ../app/sketch.py
-
-    - ../modules/grid.py
-    - ../modules/spot.py
-    - ../modules/step.py
-
-    - ../utils/attribute.py
-    - ../utils/color.py
-    - ../utils/discover.py
-    - ../utils/size.py
-</py-env>
+<py-config src=../index.toml></py-config>
 
 <py-script defer src=../index.py data-flavors=pjs></py-script>
 

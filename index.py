@@ -1,8 +1,8 @@
-from sketch import sketch, p5, p5Sketch
+from app.sketch import sketch, p5, p5Sketch
 
-from attribute import splitScriptData
-from size import canvasSize, canvasMappedToDimensions
-from discover import PJS, Q5JS, P5JS, FLAVORS
+from utils.attribute import splitScriptData
+from utils.size import canvasSize, canvasMappedToDimensions
+from utils.discover import PJS, Q5JS, P5JS, FLAVORS
 
 from random import choice
 

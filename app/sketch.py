@@ -5,7 +5,7 @@
  #
  # https://TheCodingTrain.com/CodingChallenges/162-self-avoiding-walk.html
  #
- # PyScript conversion by GoToLoop (2022/Jun/24) (v1.1.6)
+ # PyScript conversion by GoToLoop (2022/Jun/24) (v1.1.7)
  #
  # https://Discourse.Processing.org/t/
  # converting-coding-challenge-self-avoiding-walk-backtracing-
@@ -14,15 +14,16 @@
  # https://Glitch.com/~self-avoiding-walk-ii-pyscript
 ###
 
-from grid import Grid, REMOVED, PAUSED, FINISHED, BG
-from spot import MAX_STRAIGHT_REMOVALS
+from modules.grid import Grid, REMOVED, PAUSED, FINISHED, BG
+from modules.spot import MAX_STRAIGHT_REMOVALS
 
-from discover import discoverProcessingFlavor, PJS, P5JS
-from color import randomColor
+from utils.discover import discoverProcessingFlavor, PJS, P5JS
+from utils.color import randomColor
 
 from typing import Callable
 from types import MethodType
-from pyodide import create_proxy
+
+from pyodide.ffi import create_proxy
 
 import js
 from js import document

@@ -2,7 +2,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from spot import Spot
+    from modules.spot import Spot
     spot2d = tuple[tuple[Spot, ...], ...]
 
 class Step:
