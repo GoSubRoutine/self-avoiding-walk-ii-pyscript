@@ -6,7 +6,7 @@ license = 'Unlicense'
 
 [[fetch]]
 
-from = '/'
+#from = '/'
 
 files = [
   'app/sketch.py',
