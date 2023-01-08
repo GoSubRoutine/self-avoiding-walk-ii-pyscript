@@ -1,12 +1,10 @@
 name = 'Self Avoiding Walk II'
 description = 'https://Glitch.com/~self-avoiding-walk-ii-pyscript'
-version = 'v1.1.7'
+version = 'v1.1.8'
 author_name = 'GoToLoop'
 license = 'Unlicense'
 
 [[fetch]]
-
-#from = '/'
 
 files = [
   'app/sketch.py',
